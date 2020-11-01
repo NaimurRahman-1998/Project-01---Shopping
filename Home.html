@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Neesa Attire</title>
 
     <link rel="stylesheet" href="/Css/style.css">
 
@@ -20,6 +20,8 @@
 <body> 
     <div class="top-nav-bar">
     <div class="search-box">
+        <i class="fa fa-bars" id="menu-btn" onclick="openmenu()"></i>
+        <i class="fa fa-times" id="close-btn" onclick="closemenu()"></i>
 
     <img src="/Images/logo.png" class="logo">
     <input type="text" class="form-control" >
@@ -37,10 +39,104 @@
             <li><a href="#">Login</a></li>
         </ul>
     </div>
+</div>
+
+<section class="header">
+<div class="side-menu" id="side-menu">
+<ul>
+    <li>On Sale <i class="fa fa-angle-right"></i>
+       <ul>
+           <li>Sub Menu-1</li>
+           <li>Sub Menu-1</li>
+           <li>Sub Menu-1</li>
+           <li>Sub Menu-1</li>
+       </ul> 
+    
+    </li>
 
 
+    <li>Cotton <i class="fa fa-angle-right"></i>
+        <ul>
+            <li>Sub Menu-2</li>
+            <li>Sub Menu-2</li>
+            <li>Sub Menu-2</li>
+            <li>Sub Menu-2</li>
+        </ul>
 
-    </div>
+
+    </li>
+    <li>Jorjet <i class="fa fa-angle-right"></i> 
+        <ul>
+            <li>Sub Menu-3</li>
+            <li>Sub Menu-3</li>
+            <li>Sub Menu-3</li>
+            <li>Sub Menu-3</li>
+        </ul>
+
+    </li>
+
+    <li>Crinkle <i class="fa fa-angle-right"></i>
+        <ul>
+            <li>Sub Menu-2</li>
+            <li>Sub Menu-2</li>
+            <li>Sub Menu-2</li>
+            <li>Sub Menu-2</li>
+        </ul>
+    
+    
+    </li>
+
+    <li>About <i class="fa fa-angle-right"></i>
+        <ul>
+            <li>Sub Menu-2</li>
+            <li>Sub Menu-2</li>
+            <li>Sub Menu-2</li>
+            <li>Sub Menu-2</li>
+        </ul>
+    
+    
+    </li>
+
+    <li>Contact <i class="fa fa-angle-right"></i>
+        <ul>
+            <li>Sub Menu-2</li>
+            <li>Sub Menu-2</li>
+            <li>Sub Menu-2</li>
+            <li>Sub Menu-2</li>
+        </ul>
+    
+    
+    </li>
+
+    <li>Trending <i class="fa fa-angle-right"></i>
+        <ul>
+            <li>Sub Menu-2</li>
+            <li>Sub Menu-2</li>
+            <li>Sub Menu-2</li>
+            <li>Sub Menu-2</li>
+        </ul>
+    
+    
+    </li>
+</ul>    
+</div>    
+</section>
+
+<script>
+    function openmenu()
+    {
+        document.getElementById("side-menu").style.display="block"
+        document.getElementById("menu-btn").style.display="none"
+        document.getElementById("close-btn").style.display="block"
+    }
+
+    function closemenu() 
+        {
+            document.getElementById("side-menu").style.display = "none"
+            document.getElementById("menu-btn").style.display = "block"
+            document.getElementById("close-btn").style.display = "none"
+        }
+</script>
 
     
 </body>
