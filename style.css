@@ -8,7 +8,7 @@ body {
   position: sticky;
   background: rgb(255, 251, 251);
   margin-bottom: 18px;
-  border-bottom: solid #fcfcfc86;
+  border-bottom: solid #c5c5c586;
   z-index: 2;
 }
 .logo {
@@ -93,7 +93,7 @@ body {
 
 /*------------------------------------------------------*/
 .side-menu {
-  height: 79%;
+  height: 600px;
   width: 14%;
   font-size: 14px;
   float: left;
@@ -120,7 +120,7 @@ body {
 .side-menu ul li:hover ul {
   display: block;
   height: 400px;
-  margin-left: 11%;
+  margin-left: 11.5%;
   padding: 0 100px 10px 10px;
   position: fixed;
   background: #ececec;
@@ -153,4 +153,208 @@ body {
   #menu-btn {
     display: block;
   }
+}
+/*------------------------------slider css -------------------*/
+
+.slider {
+  width: 85%;
+  margin-left: 14%;
+  padding: 0 10px;
+}
+.carousel {
+  box-shadow: 1px 1px 4px 1px #8a5353;
+}
+.carousel-indicators {
+  z-index: 1 !important;
+}
+@media only screen and (max-width: 980px) {
+  .slider {
+    width: 100%;
+    margin-left: 0;
+  }
+}
+
+/*--------------------------featuerd catagory------------------*/
+
+.featured-catagory {
+  width: 100%;
+  padding: 50px;
+  transition: 1s;
+  cursor: pointer;
+}
+.featured-catagory img:hover {
+  transform: scale(1.1);
+}
+
+/*--------------------------on Sale------------------*/
+
+.title-box {
+  background-color: #dd1a1a;
+  color: #fff;
+  width: 170px;
+  padding: 4px 15px;
+  height: 40px;
+  margin-bottom: 30px;
+  display: flex;
+}
+.title-box h2 {
+  font-size: 24px;
+}
+.title-box::after {
+  content: "";
+  border-top: 40px solid #dd1a1a;
+  border-right: 50px solid transparent;
+  position: absolute;
+  display: flex;
+  margin-top: -4px;
+  margin-left: 155px;
+}
+/*-----------------------product top------------------*/
+
+.overlay-right {
+  display: block;
+  opacity: 0;
+  position: absolute;
+  top: 10%;
+  margin-left: 0;
+  width: 70px;
+}
+.overlay-right .fa {
+  cursor: pointer;
+  background-color: #ffffff;
+  color: black;
+  height: 35px;
+  width: 35px;
+  font-size: 20px;
+  padding: 7px;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+.overlay-right .btn-secondary {
+  background: none !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+.product-top:hover .overlay-right {
+  opacity: 1;
+  margin-left: 5%;
+  transition: 0.5s;
+}
+/*--------------------product bottom--------------------*/
+.product-bottom .fa {
+  color: #dd1a1a;
+  font-size: 10px;
+}
+.product-bottom h3 {
+  font-size: 20px;
+  font-weight: bold;
+}
+.product-bottom h5 {
+  font-size: 15px;
+  padding-bottom: 10px;
+}
+.new-products {
+  margin: 50px 0;
+}
+/*------------------------feature---------------------------*/
+.website-features {
+  margin: 60px 0;
+}
+.website-features img {
+  width: 40%;
+}
+.feature-text {
+  margin-top: 10px;
+  float: right;
+  width: 60%;
+  padding-left: 10px;
+  font-size: 14px;
+}
+.feature-box {
+  padding-top: 20px;
+}
+/*------------------------footer---------------------------*/
+.footer {
+  margin-top: 50px;
+  background: black;
+  color: #fff;
+}
+.footer h1 {
+  font-size: 15px;
+  margin: 25px 0;
+}
+.footer p {
+  font-size: 12px;
+}
+.copyright {
+  margin-bottom: -80px;
+  text-align: center;
+  font-size: 15px;
+  padding-bottom: 20px;
+}
+.fa-copyright {
+  color: #dd1a1a;
+  font-size: 15px;
+}
+.footer h1 {
+  margin-top: 10px;
+  background-color: black;
+}
+.footer-image img {
+  width: 150px;
+}
+.footer .row .fa {
+  padding-right: 10px;
+  font-size: 15px;
+}
+/*-------------------------single product------------------------------*/
+.single-product {
+  margin-top: 70px;
+}
+.new-arrival {
+  background: green;
+  width: 50px;
+  color: #fff;
+  font-size: 12px;
+  font-weight: bold;
+  margin-top: 20px;
+}
+.col-md-7 h2 {
+  color: #555;
+}
+#star {
+  color: #fde50d;
+}
+.single-product .fa {
+  color: #dd1a1a;
+}
+.single-product .price {
+  color: #dd1a1a;
+  font-size: 26px;
+  font-weight: bold;
+  padding-top: 20px;
+}
+.single-product input {
+  border: 1px solid #ccc;
+  font-weight: bold;
+  height: 33px;
+  text-align: center;
+  width: 200px;
+}
+.single-product .btn-primary {
+  background: #dd1a1a !important;
+  color: #fff;
+  font-size: 15px;
+  border: none;
+  box-shadow: #555 !important;
+}
+.product-description h6 {
+  margin-top: 50px;
+  color: #dd1a1a;
+}
+.product-description {
+  margin-top: 30px;
+}
+.product-description hr {
+  margin-bottom: 50px;
 }
